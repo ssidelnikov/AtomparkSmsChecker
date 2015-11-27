@@ -10,16 +10,10 @@ import Cocoa
 import AtomparkKitOSX
 
 class APCampaignsViewController: NSViewController {
+    @IBOutlet weak var campaignsTableView: NSTableView!
     @IBOutlet weak var getCampaignsButton: NSButton!
-    
-    @IBAction func checkLogin(sender: AnyObject) {
-        let login = APLogin()
-        if login.loggedIn {
-            print("User is logged in")
-        } else {
-            print("User is not logged in")
-        }
-    }
+    @IBOutlet weak var daysTextField: NSTextField!
+    var campaignsList = [APSmsCampaign]()
     
     @IBAction func getCampaigns(sender: AnyObject) {
         getCampaignsButton.enabled = false
@@ -51,14 +45,52 @@ class APCampaignsViewController: NSViewController {
     
     func loadCampaigns() {
         let fetcher = APSmsCampaignListFetcher()
-        fetcher.getCampaignsForPreviousDays(3) { (campaigns, error) -> Void in
-            self.getCampaignsButton.enabled = true
+        var days = daysTextField.integerValue
+        if days <= 0 {
+            days = 1
+            daysTextField.integerValue = days
+        }
+        fetcher.getCampaignsForPreviousDays(days) { (campaigns, error) -> Void in
             guard error == nil else {
                 print("There was an error fetching campaings. \(error)")
                 return
             }
-            print(campaigns)
-            print(campaigns.count)
+            self.campaignsList = campaigns
+            dispatch_async(dispatch_get_main_queue(), {
+                self.getCampaignsButton.enabled = true
+                self.campaignsTableView.reloadData()
+            })
         }
+    }
+    
+}
+
+// MARK: - NSTableViewDataSource
+extension APCampaignsViewController: NSTableViewDataSource {
+    func numberOfRowsInTableView(tableView: NSTableView) -> Int {
+        return self.campaignsList.count
+    }
+    
+}
+
+// MARK: - NSTableViewDelegate
+extension APCampaignsViewController: NSTableViewDelegate {
+    var dateFormatter : NSDateFormatter {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.timeZone = NSTimeZone(name: "Asia/Yekaterinburg")
+        dateFormatter.locale = NSLocale(localeIdentifier: "ru_RU")
+        dateFormatter.dateFormat = "dd MMMM yyyy г. HH:mm"
+        return dateFormatter
+    }
+    
+    func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        let cellView = tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: self) as! NSTableCellView
+        
+        let campaign = self.campaignsList[row]
+        let rowData = ["Date": dateFormatter.stringFromDate(campaign.date), "Phone": campaign.phoneNumber, "Order No": campaign.orderNumber]
+        if let value = rowData[tableColumn!.identifier] {
+            cellView.textField!.stringValue = value
+        }
+        return cellView
     }
 }

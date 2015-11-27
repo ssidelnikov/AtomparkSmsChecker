@@ -15,6 +15,17 @@ public class APSmsCampaign: NSObject {
     public var text: String
     public var delivered = false
     
+    public var orderNumber : String {
+        let textWords = text.componentsSeparatedByString(" ")
+        var number = textWords[1]
+        guard number.hasPrefix("№") else {
+            print("The second word of the text (\(number)) doesn't start with character \"№\".")
+            return ""
+        }
+        number.removeAtIndex(number.startIndex)
+        return number
+    }
+    
     public override var description : String {
         return "Message \"\(date)\" to \"\(phoneNumber)\" (campaign \(campaignId)): \"\(text)\". Delivered: \(delivered)."
     }
