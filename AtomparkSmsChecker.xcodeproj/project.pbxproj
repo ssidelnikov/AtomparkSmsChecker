@@ -6,20 +6,320 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6797D0EB1B99E1A0080E7BE6 /* Pods_AtomparkKitOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62E66690E16A1DEB0DF2474 /* Pods_AtomparkKitOSX.framework */; };
+		BF5FD8B2525124652A5D3107 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647F233331C7E24BA40EFE27 /* Pods.framework */; };
+		F619B1911C082608003743AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6730D0B1C05C8B5004A7B9A /* ViewController.swift */; };
+		F619B1941C082AAA003743AD /* Pods-AtomparkKitOSX.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 90BDE9111279F12ACC064631 /* Pods-AtomparkKitOSX.release.xcconfig */; };
+		F619B1951C082AAC003743AD /* Pods-AtomparkKitOSX.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 492F667D3DAFA6044C32D21A /* Pods-AtomparkKitOSX.debug.xcconfig */; };
+		F619B1991C085229003743AD /* APCampaignsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F619B1981C085229003743AD /* APCampaignsViewController.swift */; };
+		F619B19B1C086901003743AD /* APUserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = F619B19A1C086901003743AD /* APUserCredentials.swift */; };
+		F6730D0A1C05C8B5004A7B9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6730D091C05C8B5004A7B9A /* AppDelegate.swift */; };
+		F6730D0F1C05C8B5004A7B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6730D0D1C05C8B5004A7B9A /* Main.storyboard */; };
+		F6730D111C05C8B5004A7B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6730D101C05C8B5004A7B9A /* Assets.xcassets */; };
+		F6730D141C05C8B5004A7B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6730D121C05C8B5004A7B9A /* LaunchScreen.storyboard */; };
+		F6730D201C05C8F0004A7B9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6730D1F1C05C8F0004A7B9A /* AppDelegate.swift */; };
+		F6730D241C05C8F0004A7B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6730D231C05C8F0004A7B9A /* Assets.xcassets */; };
+		F6730D271C05C8F0004A7B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6730D251C05C8F0004A7B9A /* Main.storyboard */; };
+		F6730D341C05C9CC004A7B9A /* AtomparkKitOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = F6730D331C05C9CC004A7B9A /* AtomparkKitOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6730D381C05C9CC004A7B9A /* AtomparkKitOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6730D311C05C9CC004A7B9A /* AtomparkKitOSX.framework */; };
+		F6730D391C05C9CC004A7B9A /* AtomparkKitOSX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6730D311C05C9CC004A7B9A /* AtomparkKitOSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6730D411C05CBA3004A7B9A /* APNetworker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6730D401C05CBA3004A7B9A /* APNetworker.swift */; };
+		F6730D441C05D53A004A7B9A /* APLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6730D431C05D53A004A7B9A /* APLogin.swift */; };
+		F6B67A581C06DB67000F6C49 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B67A571C06DB67000F6C49 /* SettingsViewController.swift */; };
+		F6B67A5A1C081780000F6C49 /* APSmsCampaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B67A591C081780000F6C49 /* APSmsCampaign.swift */; };
+		F6B67A5C1C0818CD000F6C49 /* APSmsCampaignListFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B67A5B1C0818CD000F6C49 /* APSmsCampaignListFetcher.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6730D361C05C9CC004A7B9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6730CFC1C05C88A004A7B9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6730D301C05C9CC004A7B9A;
+			remoteInfo = AtomparkKitOSX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6730D3D1C05C9CC004A7B9A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F6730D391C05C9CC004A7B9A /* AtomparkKitOSX.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		34D25DA09633223BB211A551 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		492F667D3DAFA6044C32D21A /* Pods-AtomparkKitOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtomparkKitOSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AtomparkKitOSX/Pods-AtomparkKitOSX.debug.xcconfig"; sourceTree = "<group>"; };
+		5CAE6440CE9999AA111A82DA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		647F233331C7E24BA40EFE27 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90BDE9111279F12ACC064631 /* Pods-AtomparkKitOSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtomparkKitOSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-AtomparkKitOSX/Pods-AtomparkKitOSX.release.xcconfig"; sourceTree = "<group>"; };
+		E62E66690E16A1DEB0DF2474 /* Pods_AtomparkKitOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AtomparkKitOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F619B18F1C082562003743AD /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
+		F619B1921C0827E7003743AD /* libHTMLReader.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHTMLReader.a; path = "../../../Library/Developer/Xcode/DerivedData/AtomparkSmsChecker-fpvypxnzdcabzlbvjvnngfxqvdky/Build/Products/Debug/libHTMLReader.a"; sourceTree = "<group>"; };
+		F619B1981C085229003743AD /* APCampaignsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APCampaignsViewController.swift; sourceTree = "<group>"; };
+		F619B19A1C086901003743AD /* APUserCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APUserCredentials.swift; sourceTree = "<group>"; };
+		F6730D061C05C8B5004A7B9A /* APSmsChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APSmsChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6730D091C05C8B5004A7B9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6730D0B1C05C8B5004A7B9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F6730D0E1C05C8B5004A7B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6730D101C05C8B5004A7B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6730D131C05C8B5004A7B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6730D151C05C8B5004A7B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6730D1D1C05C8F0004A7B9A /* APSmsChecker (OS X).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "APSmsChecker (OS X).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6730D1F1C05C8F0004A7B9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6730D231C05C8F0004A7B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6730D261C05C8F0004A7B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6730D281C05C8F0004A7B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6730D311C05C9CC004A7B9A /* AtomparkKitOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AtomparkKitOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6730D331C05C9CC004A7B9A /* AtomparkKitOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtomparkKitOSX.h; sourceTree = "<group>"; };
+		F6730D351C05C9CC004A7B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6730D401C05CBA3004A7B9A /* APNetworker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APNetworker.swift; sourceTree = "<group>"; };
+		F6730D431C05D53A004A7B9A /* APLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APLogin.swift; sourceTree = "<group>"; };
+		F6B67A571C06DB67000F6C49 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F6B67A591C081780000F6C49 /* APSmsCampaign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSmsCampaign.swift; sourceTree = "<group>"; };
+		F6B67A5B1C0818CD000F6C49 /* APSmsCampaignListFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSmsCampaignListFetcher.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6730D031C05C8B5004A7B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5FD8B2525124652A5D3107 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6730D1A1C05C8F0004A7B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6730D381C05C9CC004A7B9A /* AtomparkKitOSX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6730D2D1C05C9CC004A7B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6797D0EB1B99E1A0080E7BE6 /* Pods_AtomparkKitOSX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
+		33588A029E122C0B004AAB85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CAE6440CE9999AA111A82DA /* Pods.debug.xcconfig */,
+				34D25DA09633223BB211A551 /* Pods.release.xcconfig */,
+				492F667D3DAFA6044C32D21A /* Pods-AtomparkKitOSX.debug.xcconfig */,
+				90BDE9111279F12ACC064631 /* Pods-AtomparkKitOSX.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		670785F997CE5C5969B636A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F619B1921C0827E7003743AD /* libHTMLReader.a */,
+				F619B18F1C082562003743AD /* Pods.framework */,
+				647F233331C7E24BA40EFE27 /* Pods.framework */,
+				E62E66690E16A1DEB0DF2474 /* Pods_AtomparkKitOSX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F6730CFB1C05C88A004A7B9A = {
 			isa = PBXGroup;
 			children = (
+				F6730D3F1C05CB66004A7B9A /* Shared AtomparkKit Framework Code */,
+				F6730D081C05C8B5004A7B9A /* AtomparkSmsChecker */,
+				F6730D1E1C05C8F0004A7B9A /* AtomparkSmsChecker OS X App */,
+				F6730D071C05C8B5004A7B9A /* Products */,
+				33588A029E122C0B004AAB85 /* Pods */,
+				670785F997CE5C5969B636A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
+		F6730D071C05C8B5004A7B9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6730D061C05C8B5004A7B9A /* APSmsChecker.app */,
+				F6730D1D1C05C8F0004A7B9A /* APSmsChecker (OS X).app */,
+				F6730D311C05C9CC004A7B9A /* AtomparkKitOSX.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6730D081C05C8B5004A7B9A /* AtomparkSmsChecker */ = {
+			isa = PBXGroup;
+			children = (
+				F6730D091C05C8B5004A7B9A /* AppDelegate.swift */,
+				F6730D0B1C05C8B5004A7B9A /* ViewController.swift */,
+				F6730D0D1C05C8B5004A7B9A /* Main.storyboard */,
+				F6730D101C05C8B5004A7B9A /* Assets.xcassets */,
+				F6730D121C05C8B5004A7B9A /* LaunchScreen.storyboard */,
+				F6730D151C05C8B5004A7B9A /* Info.plist */,
+			);
+			path = AtomparkSmsChecker;
+			sourceTree = "<group>";
+		};
+		F6730D1E1C05C8F0004A7B9A /* AtomparkSmsChecker OS X App */ = {
+			isa = PBXGroup;
+			children = (
+				F6730D3E1C05CA12004A7B9A /* Main App */,
+				F6730D321C05C9CC004A7B9A /* AtomparkKit Framework (OS X) */,
+			);
+			name = "AtomparkSmsChecker OS X App";
+			path = AtomparkSmsCheckerOSX;
+			sourceTree = "<group>";
+		};
+		F6730D321C05C9CC004A7B9A /* AtomparkKit Framework (OS X) */ = {
+			isa = PBXGroup;
+			children = (
+				F6730D331C05C9CC004A7B9A /* AtomparkKitOSX.h */,
+				F6730D351C05C9CC004A7B9A /* Info.plist */,
+			);
+			name = "AtomparkKit Framework (OS X)";
+			path = ../AtomparkKitOSX;
+			sourceTree = "<group>";
+		};
+		F6730D3E1C05CA12004A7B9A /* Main App */ = {
+			isa = PBXGroup;
+			children = (
+				F6730D1F1C05C8F0004A7B9A /* AppDelegate.swift */,
+				F6B67A571C06DB67000F6C49 /* SettingsViewController.swift */,
+				F619B1981C085229003743AD /* APCampaignsViewController.swift */,
+				F619B19A1C086901003743AD /* APUserCredentials.swift */,
+				F6730D231C05C8F0004A7B9A /* Assets.xcassets */,
+				F6730D251C05C8F0004A7B9A /* Main.storyboard */,
+				F6730D281C05C8F0004A7B9A /* Info.plist */,
+			);
+			name = "Main App";
+			sourceTree = "<group>";
+		};
+		F6730D3F1C05CB66004A7B9A /* Shared AtomparkKit Framework Code */ = {
+			isa = PBXGroup;
+			children = (
+				F6730D421C05CED4004A7B9A /* Parsers */,
+				F6730D401C05CBA3004A7B9A /* APNetworker.swift */,
+				F6730D431C05D53A004A7B9A /* APLogin.swift */,
+				F6B67A591C081780000F6C49 /* APSmsCampaign.swift */,
+				F6B67A5B1C0818CD000F6C49 /* APSmsCampaignListFetcher.swift */,
+			);
+			name = "Shared AtomparkKit Framework Code";
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F6730D421C05CED4004A7B9A /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Parsers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F6730D2E1C05C9CC004A7B9A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6730D341C05C9CC004A7B9A /* AtomparkKitOSX.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F6730D051C05C8B5004A7B9A /* APSmsChecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6730D161C05C8B5004A7B9A /* Build configuration list for PBXNativeTarget "APSmsChecker" */;
+			buildPhases = (
+				9C999C0834413605D4795A5F /* Check Pods Manifest.lock */,
+				F6730D021C05C8B5004A7B9A /* Sources */,
+				F6730D031C05C8B5004A7B9A /* Frameworks */,
+				F6730D041C05C8B5004A7B9A /* Resources */,
+				9AE3506E146D478F8F3EBD37 /* Embed Pods Frameworks */,
+				4984771C6DC3D65319A583ED /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APSmsChecker;
+			productName = AtomparkSmsChecker;
+			productReference = F6730D061C05C8B5004A7B9A /* APSmsChecker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6730D1C1C05C8F0004A7B9A /* APSmsChecker (OS X) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6730D291C05C8F0004A7B9A /* Build configuration list for PBXNativeTarget "APSmsChecker (OS X)" */;
+			buildPhases = (
+				F6730D191C05C8F0004A7B9A /* Sources */,
+				F6730D1A1C05C8F0004A7B9A /* Frameworks */,
+				F6730D1B1C05C8F0004A7B9A /* Resources */,
+				F6730D3D1C05C9CC004A7B9A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6730D371C05C9CC004A7B9A /* PBXTargetDependency */,
+			);
+			name = "APSmsChecker (OS X)";
+			productName = AtomparkSmsCheckerOSX;
+			productReference = F6730D1D1C05C8F0004A7B9A /* APSmsChecker (OS X).app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6730D301C05C9CC004A7B9A /* AtomparkKitOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6730D3A1C05C9CC004A7B9A /* Build configuration list for PBXNativeTarget "AtomparkKitOSX" */;
+			buildPhases = (
+				F3ED3AB450C8B471B0538B1B /* Check Pods Manifest.lock */,
+				F6730D2C1C05C9CC004A7B9A /* Sources */,
+				F6730D2D1C05C9CC004A7B9A /* Frameworks */,
+				F6730D2E1C05C9CC004A7B9A /* Headers */,
+				F6730D2F1C05C9CC004A7B9A /* Resources */,
+				35299BF94BA04DA214BFD8F3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AtomparkKitOSX;
+			productName = AtomparkKitOSX;
+			productReference = F6730D311C05C9CC004A7B9A /* AtomparkKitOSX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		F6730CFC1C05C88A004A7B9A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
+				TargetAttributes = {
+					F6730D051C05C8B5004A7B9A = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 5C9TGFA48W;
+					};
+					F6730D1C1C05C8F0004A7B9A = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					F6730D301C05C9CC004A7B9A = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
 			};
 			buildConfigurationList = F6730CFF1C05C88A004A7B9A /* Build configuration list for PBXProject "AtomparkSmsChecker" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -27,14 +327,197 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = F6730CFB1C05C88A004A7B9A;
+			productRefGroup = F6730D071C05C8B5004A7B9A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				F6730D051C05C8B5004A7B9A /* APSmsChecker */,
+				F6730D1C1C05C8F0004A7B9A /* APSmsChecker (OS X) */,
+				F6730D301C05C9CC004A7B9A /* AtomparkKitOSX */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6730D041C05C8B5004A7B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6730D141C05C8B5004A7B9A /* LaunchScreen.storyboard in Resources */,
+				F6730D111C05C8B5004A7B9A /* Assets.xcassets in Resources */,
+				F6730D0F1C05C8B5004A7B9A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6730D1B1C05C8F0004A7B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6730D241C05C8F0004A7B9A /* Assets.xcassets in Resources */,
+				F6730D271C05C8F0004A7B9A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6730D2F1C05C9CC004A7B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F619B1951C082AAC003743AD /* Pods-AtomparkKitOSX.debug.xcconfig in Resources */,
+				F619B1941C082AAA003743AD /* Pods-AtomparkKitOSX.release.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35299BF94BA04DA214BFD8F3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AtomparkKitOSX/Pods-AtomparkKitOSX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4984771C6DC3D65319A583ED /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AE3506E146D478F8F3EBD37 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C999C0834413605D4795A5F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F3ED3AB450C8B471B0538B1B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6730D021C05C8B5004A7B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F619B1911C082608003743AD /* ViewController.swift in Sources */,
+				F6730D0A1C05C8B5004A7B9A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6730D191C05C8F0004A7B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6730D201C05C8F0004A7B9A /* AppDelegate.swift in Sources */,
+				F619B19B1C086901003743AD /* APUserCredentials.swift in Sources */,
+				F6B67A581C06DB67000F6C49 /* SettingsViewController.swift in Sources */,
+				F619B1991C085229003743AD /* APCampaignsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6730D2C1C05C9CC004A7B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B67A5A1C081780000F6C49 /* APSmsCampaign.swift in Sources */,
+				F6730D441C05D53A004A7B9A /* APLogin.swift in Sources */,
+				F6B67A5C1C0818CD000F6C49 /* APSmsCampaignListFetcher.swift in Sources */,
+				F6730D411C05CBA3004A7B9A /* APNetworker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6730D371C05C9CC004A7B9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6730D301C05C9CC004A7B9A /* AtomparkKitOSX */;
+			targetProxy = F6730D361C05C9CC004A7B9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6730D0D1C05C8B5004A7B9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6730D0E1C05C8B5004A7B9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6730D121C05C8B5004A7B9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6730D131C05C8B5004A7B9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F6730D251C05C8F0004A7B9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6730D261C05C8F0004A7B9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F6730D001C05C88A004A7B9A /* Debug */ = {
@@ -49,6 +532,315 @@
 			};
 			name = Release;
 		};
+		F6730D171C05C8B5004A7B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CAE6440CE9999AA111A82DA /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = AtomparkSmsChecker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.alvik74.AtomparkSmsChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6730D181C05C8B5004A7B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34D25DA09633223BB211A551 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = AtomparkSmsChecker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.alvik74.AtomparkSmsChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6730D2A1C05C8F0004A7B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon (OS X)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = AtomparkSmsCheckerOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.alvik74.AtomparkSmsCheckerOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6730D2B1C05C8F0004A7B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon (OS X)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = AtomparkSmsCheckerOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.alvik74.AtomparkSmsCheckerOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F6730D3B1C05C9CC004A7B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 492F667D3DAFA6044C32D21A /* Pods-AtomparkKitOSX.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = AtomparkKitOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.alvik74.AtomparkKitOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F6730D3C1C05C9CC004A7B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90BDE9111279F12ACC064631 /* Pods-AtomparkKitOSX.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = AtomparkKitOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.alvik74.AtomparkKitOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -57,6 +849,33 @@
 			buildConfigurations = (
 				F6730D001C05C88A004A7B9A /* Debug */,
 				F6730D011C05C88A004A7B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6730D161C05C8B5004A7B9A /* Build configuration list for PBXNativeTarget "APSmsChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6730D171C05C8B5004A7B9A /* Debug */,
+				F6730D181C05C8B5004A7B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6730D291C05C8F0004A7B9A /* Build configuration list for PBXNativeTarget "APSmsChecker (OS X)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6730D2A1C05C8F0004A7B9A /* Debug */,
+				F6730D2B1C05C8F0004A7B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6730D3A1C05C9CC004A7B9A /* Build configuration list for PBXNativeTarget "AtomparkKitOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6730D3B1C05C9CC004A7B9A /* Debug */,
+				F6730D3C1C05C9CC004A7B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

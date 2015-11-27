@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:AtomparkSmsChecker.xcodeproj">
+      location = "self:/Users/stan/Projects/Mac OS X/AtomparkSmsChecker/AtomparkSmsChecker.xcodeproj">
    </FileRef>
 </Workspace>
